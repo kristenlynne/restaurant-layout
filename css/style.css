@@ -45,8 +45,8 @@ h3 {
 
 p {
   font-family: 'Lato', sans-serif;
-  font-size: .8em;
-  line-height: 1.75em;
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
 /*  --------------------- Form -----------------------  */
@@ -67,7 +67,7 @@ p {
 }
 
 .input-field {
-  width: 35%;
+  width: 100%;
   padding: 10px;
   text-indent: 25px;
   border-radius: 5px;
@@ -108,7 +108,7 @@ nav {
 nav ul {
   display: flex;
   justify-content: space-around;
-  padding: 15px 50px 0 0;  
+  padding: 20px 50px 0 0;  
 }
 
 /******************************************
@@ -128,9 +128,33 @@ nav li, nav a {
 
 nav a {
   font-family: 'Lato', sans-serif;
-  font-size: .8em;
+  font-size: 1em;
 }
 
+.button {
+  border-radius: 30px;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  background: none;
+  text-decoration: none;
+  padding: 7px 20px;
+  border: 3px solid #fff;
+  color: #fff;
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, .2);
+}
+
+.buttondark {
+  background: #F27405;
+  border: none;
+}
+
+.buttondark:hover {
+  background: rgba(242, 116, 5, .85);
+}
 
 /* --------------------------- Main -------------------------------- */
 main {
@@ -143,7 +167,7 @@ main section {
   /* background: pink; */
   clear: both;
   width: 50%;
-  margin: 5% 0;
+  margin: 3% 0;
   padding-left: 10%;
 }
 
@@ -174,7 +198,7 @@ main section p {
   background: white;
 }
 .guac {
-  background: linear-gradient(to left, rgba(255, 255, 255, 1) , rgba(255,255,255,.2) 50%), url('images/chipsandguac.jpg');
+  background: linear-gradient(to left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 90%), url('images/chipsandguac.jpg');
   background-size: cover;
   width: 40%;
   height: 100vh;
@@ -200,8 +224,8 @@ h3 {
 .aboutUs p {
   text-align: justify;
   font-family: 'Lato', sans-serif;
-  font-size: .8em;
-  line-height: 1.75em;
+  font-size: .9em;
+  line-height: 1.5em;
   color:rgba(14, 12, 37);
   margin-bottom: 15px;
   
@@ -339,7 +363,7 @@ h2 {
 }
 
 .bookTable img {
-  width: 65%;
+  width: 30%;
   margin-left: 18%;
 }
 
@@ -348,8 +372,13 @@ h2 {
 }
 
 .bookTable {
-  background: rgba(248, 249, 251);
+  /* background: rgba(248, 249, 251); */
+  background: linear-gradient(to left, rgba(255, 255, 255, 1) , rgba(255,255,255,.2) 100%), url('images/tacos.jpeg');
+  background-size: cover;
+  float: left;
   padding: 5% 0;
+  width: 100%;
+  height: 100vh;
 }
 
 /* --------------------------- Testimonials -------------------------------- */
@@ -362,6 +391,7 @@ h2 {
 
 .reviews {
   padding: 5% 0 5% 0;
+  height: 100vh;
 }
 
 .reviews li {
@@ -545,6 +575,7 @@ h5 {
     background: rgba(248, 249, 251);
     padding: 5% 0;
   }
+  
   .reviews img {
     margin-left: 38%;
   } 
