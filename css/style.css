@@ -1,0 +1,587 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+li {
+  display: inline;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  color: rgba(14, 12, 37);
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: .8em;
+  line-height: 1.75em;
+}
+
+/*  --------------------- Form -----------------------  */
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icon {
+  padding: 10px 0 10px 0;
+  color: rgba(213, 216, 230);
+  min-width: 40px;
+  text-align: center;
+}
+
+.input-field {
+  width: 35%;
+  padding: 10px;
+  text-indent: 25px;
+  border-radius: 5px;
+  border-style: none;
+  border: 2px solid rgba(213, 216, 230)
+}
+
+input::placeholder {
+  color: rgba(213, 216, 230)
+}
+
+/* ------------------------------ Span ------------------------------  */
+span {
+  color:rgba(248, 137, 27);
+  font-family: 'Lato', sans-serif;
+}
+
+.btn {
+  background: rgba(248, 137, 27);
+  color: white;
+  padding: 9px 25px 9px 25px;
+  font-size: .9em;
+  font-family: 'Lato', sans-serif;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  width: 100%;
+  height: 50px;
+}
+
+nav {
+  width: 60%;
+  float: right;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 50px 0 0;  
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/* --------------------------- Navigation -------------------------------- */
+
+.logo {
+  float: left;
+  padding: 0 0 0 10%;
+}
+
+nav li, nav a {
+  color: rgba(14, 12, 37)
+}
+
+nav a {
+  font-family: 'Lato', sans-serif;
+  font-size: .8em;
+}
+
+
+/* --------------------------- Main -------------------------------- */
+main {
+  background: url('images/maingraphic.png');
+  background-size: cover;
+  height: 100vh;
+}
+
+main section {
+  /* background: pink; */
+  clear: both;
+  width: 50%;
+  margin: 5% 0;
+  padding-left: 10%;
+}
+
+main section i {
+  color: rgba(248, 137, 27);
+}
+
+h1 {
+  font-size: 4em;
+  line-height: 1.15em;
+  padding-bottom: .5em;
+  width: 100%;
+}
+
+main section p {
+  padding-bottom: 32px;
+}
+
+.socialMedia li {
+  padding-right: 25px;
+  font-family: 'Lato', sans-serif;
+  font-size: .9em;
+}
+
+/* --------------------------- About Us -------------------------------- */
+
+.aboutUs {
+  background: white;
+}
+.guac {
+  background: linear-gradient(to left, rgba(255, 255, 255, 1) , rgba(255,255,255,.2) 50%), url('images/chipsandguac.jpg');
+  background-size: cover;
+  width: 40%;
+  height: 100vh;
+  float: left;
+}
+
+.aboutUs section + section {
+  width: 60%;
+  /* background: linear-gradient(to left, rgba(255, 255, 255, 0) 40%, rgba(255,255,255,1) 60%), url('images/spices.jpg') no-repeat; */
+  /* background: lemonchiffon; */
+  background-size: contain;
+  background-position-x: right;
+  float: left;
+  height: 100vh;
+  padding: 3% 3% 5% 3%;
+}
+
+h3 {
+  font-size: 2.75em;
+  padding: 0 0 3% 0;
+}
+
+.aboutUs p {
+  text-align: justify;
+  font-family: 'Lato', sans-serif;
+  font-size: .8em;
+  line-height: 1.75em;
+  color:rgba(14, 12, 37);
+  margin-bottom: 15px;
+  
+}
+
+.aboutUs p + p {
+  margin-bottom: 50px;
+}
+
+.aboutUs span {
+  text-align: left;
+}
+
+.aboutUs .btn {
+  margin-top: 25px;
+}
+
+/* --------------------------- Order -------------------------------- */
+
+.order h2, .order ul {
+  text-align: center;
+}
+
+.order h2 {
+  font-size: 3em;
+  padding-bottom: 2.5%;
+}
+
+.order ul a {
+  color: rgba(14, 12, 37);
+  font-family: 'Lato', sans-serif;
+}
+
+.order ul {
+  border-bottom: 1px solid grey;
+  width: 45%;
+  display: flex;
+  margin-left: 28%;
+  margin-bottom: 5%;
+}
+
+.order li {
+  padding: 15px 28px;
+}
+
+span {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.order {
+  width: 100%;
+  float: left;
+  padding: 5% 0;
+  background: rgba(242, 246, 247)
+}
+
+.foodPics {
+  width: 225px;
+  height: 275px;
+  background: url('ben-kolde-FFqNATH27EM-unsplash.jpg');
+  background-size: cover;
+  margin: 2% 0;
+}
+.foodPicsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0% 10%;
+}
+
+/* .foodPics + .foodPics {
+  margin: 0 0 0 35px;
+}
+
+.start {
+  margin-left: 16%;
+} */
+
+/* --------------------------- Book Table -------------------------------- */
+
+h2, h4, .phoneNumber {
+  text-align: center;
+}
+
+.bookTable i {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid rgba(248, 137, 27);
+  color:rgba(248, 137, 27);
+  border-radius: 50%;
+  margin-left: 48.5%;
+  margin-bottom: 1%;
+}
+
+h2 {
+  font-size: 3em;
+  padding-bottom: 3%;
+}
+
+.hours div:first-child {
+  width: 45%;
+  float: left;
+  margin-left: 20%;
+}
+
+.hours div:last-child {
+  width: 25%;
+  float: left;
+}
+
+.hours div p:first-child {
+  font-family: 'Lato', sans-serif;
+  color:rgba(14, 12, 37);
+  font-size: .95em;
+}
+
+.hours div p:last-child {
+  font-family: 'Playfair Display', serif;
+  color:rgba(14, 12, 37);
+  font-size: 1.3em;
+  font-weight: 600;
+  padding: 2% 0 5% 0;
+}
+
+.phoneNumber {
+  color:rgba(248, 137, 27);
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75em;
+  font-weight: 600;
+  padding-bottom: 2%;
+}
+
+.bookTable img {
+  width: 65%;
+  margin-left: 18%;
+}
+
+.bookTable span {
+  padding-top: 5%;
+}
+
+.bookTable {
+  background: rgba(248, 249, 251);
+  padding: 5% 0;
+}
+
+/* --------------------------- Testimonials -------------------------------- */
+
+.reviews img {
+  width: 100px;
+  border-radius: 50%;
+  margin-left: 46%;
+}
+
+.reviews {
+  padding: 5% 0 5% 0;
+}
+
+.reviews li {
+  color: rgba(250, 194, 32);
+}
+
+.reviews ul {
+  margin-left: 45.5%;
+}
+
+.reviews p {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: .9em;
+  font-style: italic;
+  line-height: 1.5em;;
+  padding: 2% 25% 0 25%;
+  color:rgba(14, 12, 37);
+}
+
+h6 {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  color: grey;
+  padding-bottom: 2%;
+  font-size: .95em;
+}
+
+h5 {
+  color:rgba(14, 12, 37);
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+@media screen and (max-width: 450px) {
+  .links {
+    display: none;
+  }
+  nav {
+    width: 100%;
+    float: right;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0 0 0;  
+  }
+  main h1 {
+    font-size: 3em;
+    line-height: 55px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+  }
+  main {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) , rgba(255,255,255,0) 80%), url('brooke-lark-08bOYnH_r_E-unsplash.jpg');
+    background-size: cover;
+    background-position-x: left;
+    height: 500px;
+  }
+  .input-field {
+    width: 60%;
+  }
+  .socialMedia {
+    float: right;
+    margin-top: 25px;
+    margin-right: 15px;
+  }
+  .socialMedia li {
+    padding-left: 25px;
+    padding-right: 0px;
+  }
+  .pie {
+    display: none;
+  }
+  .aboutUs section + section {
+    width: 100%;
+    background: linear-gradient(to top, rgba(255, 255, 255, .5) 10%, rgba(255,255,255,1) 100%), url('oatmealcrop.jpg') no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    float: left;
+    height: 540px;
+    padding: 5% 5% 5% 5%;
+  }
+  
+  h3 {
+    font-size: 2.25em;
+    padding: 3% 0 5% 0;
+  }
+  .foodPics {
+    width: 150px;
+    height: 200px;
+    margin: 2% 0;
+  }
+  .foodPicsContainer {
+    margin: 0% 10%;
+  }
+  .order ul {
+    border-bottom: 1px solid grey;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 0%;
+    margin-bottom: 5%;
+  }
+  .order li {
+    padding: 10px 0px;
+  }
+  .order h2 {
+    font-size: 2.15em;
+  }
+  h2, h4, .phoneNumber {
+    text-align: center;
+  }
+  
+  .bookTable i {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid rgba(248, 137, 27);
+    color:rgba(248, 137, 27);
+    border-radius: 50%;
+    margin-left: 45%;
+    margin-bottom: 1%;
+  }
+  
+  .bookTable h2 {
+    font-size: 2em;
+    padding-bottom: 3%;
+  }
+  
+  .hours div:first-child {
+    width: 40%;
+    float: left;
+    margin-left: 10%;
+  }
+  
+  .hours div:last-child {
+    width: 40%;
+    float: left;
+    margin-left: 10%;
+  }
+  
+  .hours div p:first-child {
+    font-family: 'Lato', sans-serif;
+    color:rgba(14, 12, 37);
+    font-size: .95em;
+  }
+  
+  .hours div p:last-child {
+    font-family: 'Playfair Display', serif;
+    color:rgba(14, 12, 37);
+    font-size: 1em;
+    font-weight: 600;
+    padding: 2% 0 5% 0;
+  }
+  
+  .phoneNumber {
+    color:rgba(248, 137, 27);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-bottom: 5%;
+  }
+  .bookTable img {
+    width: 75%;
+    margin-left: 12%;
+    margin-top: 5%
+  }
+  
+  .bookTable span {
+    padding-top: 5%;
+  }
+  
+  .bookTable {
+    background: rgba(248, 249, 251);
+    padding: 5% 0;
+  }
+  .reviews img {
+    margin-left: 38%;
+  } 
+  .reviews ul {
+    display: flex;
+    justify-content: center;
+    margin-left: 0%;
+  }
+  
+  .reviews p {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: .9em;
+    font-style: italic;
+    line-height: 1.5em;;
+    padding: 2% 15% 0 15%;
+    color:rgba(14, 12, 37);
+  }
+  
+  h6 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: grey;
+    padding-bottom: 2%;
+    font-size: .95em;
+  }
+  
+  h5 {
+    color:rgba(14, 12, 37);
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+/* ------------------------------------------------------- */
+@media screen and (min-width: 451px) {
+  .fa-bars {
+    display: none;
+  }
+}
