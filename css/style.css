@@ -148,12 +148,13 @@ nav a {
 }
 
 .buttondark {
-  background: #F27405;
-  border: none;
+  background: rgb(44, 174, 218);
+  border: 3px solid rgb(44, 174, 218);
 }
 
 .buttondark:hover {
-  background: rgba(242, 116, 5, .85);
+  background: rgb(35, 144, 180);
+  border: 3px solid rgb(35, 144, 180);
 }
 
 /* --------------------------- Main -------------------------------- */
@@ -309,78 +310,58 @@ span {
 
 /* --------------------------- Book Table -------------------------------- */
 
-h2, h4, .phoneNumber {
-  text-align: center;
-}
-
-.bookTable i {
-  display: inline-block;
-  text-align: center;
-  padding: 10px;
-  border: 1px solid rgba(248, 137, 27);
-  color:rgba(248, 137, 27);
-  border-radius: 50%;
-  margin-left: 48.5%;
-  margin-bottom: 1%;
-}
-
-h2 {
-  font-size: 3em;
-  padding-bottom: 3%;
-}
-
-.hours div:first-child {
-  width: 45%;
-  float: left;
-  margin-left: 20%;
-}
-
-.hours div:last-child {
-  width: 25%;
-  float: left;
-}
-
-.hours div p:first-child {
-  font-family: 'Lato', sans-serif;
-  color:rgba(14, 12, 37);
-  font-size: .95em;
-}
-
-.hours div p:last-child {
-  font-family: 'Playfair Display', serif;
-  color:rgba(14, 12, 37);
-  font-size: 1.3em;
-  font-weight: 600;
-  padding: 2% 0 5% 0;
-}
-
-.phoneNumber {
-  color:rgba(248, 137, 27);
-  font-family: 'Playfair Display', serif;
-  font-size: 1.75em;
-  font-weight: 600;
-  padding-bottom: 2%;
-}
-
-.bookTable img {
-  width: 30%;
-  margin-left: 18%;
-}
-
-.bookTable span {
-  padding-top: 5%;
-}
-
 .bookTable {
-  /* background: rgba(248, 249, 251); */
-  background: linear-gradient(to left, rgba(255, 255, 255, 1) , rgba(255,255,255,.2) 100%), url('images/tacos.jpeg');
+  background: linear-gradient(to bottom, rgba(255, 255, 255, .95) 50%, rgba(255,255,255,.4) 100%), url('images/tacos.jpeg');
   background-size: cover;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
   float: left;
-  padding: 5% 0;
+  padding: 0 0;
   width: 100%;
   height: 100vh;
 }
 
+.logocontact {
+  padding: 0;
+}
+
+.list {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.first {
+  padding-bottom: 10%;
+}
+
+.bookTable img {
+  width: 40%;
+}
+
+.buttongroup ul {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+}
+
+.sidebyside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.govertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
 /* --------------------------- Testimonials -------------------------------- */
 
 .reviews img {
