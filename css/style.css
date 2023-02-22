@@ -173,7 +173,9 @@ main section {
 }
 
 main section i {
-  color: rgba(248, 137, 27);
+  color: rgb(255, 255, 255);
+  font-size: 1.1em;
+  padding-right: 3px;
 }
 
 h1 {
@@ -190,7 +192,7 @@ main section p {
 .socialMedia li {
   padding-right: 25px;
   font-family: 'Lato', sans-serif;
-  font-size: .9em;
+  font-size: 1em;
 }
 
 /* --------------------------- About Us -------------------------------- */
@@ -312,13 +314,12 @@ span {
 
 .bookTable {
   /* background: linear-gradient(to bottom, rgba(255, 255, 255, .95) 50%, rgba(255,255,255,.4) 100%), url('images/tacos.jpeg'); */
-  background: linear-gradient(170deg, rgba(40,190,220,0.7) 0%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(165deg, rgba(26, 164, 191, 0.9) 0%, rgba(48,208,213,1) 100%);
   background-size: cover;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   display: flex;
-  float: left;
   padding: 0 0;
   width: 100%;
   height: 100vh;
@@ -329,7 +330,7 @@ span {
 }
 
 .list {
-  /* align-items: center; */
+  align-items: center;
   display: flex;
   flex-direction: column;
   font-family: 'Lato', sans-serif;
@@ -338,36 +339,49 @@ span {
 }
 
 .first {
-  padding-bottom: 10%;
+  padding-bottom: 5%;
 }
 
-.bookTable img {
-  width: 40%;
+.govertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 50%;
+  height: 90vh;
 }
 
-.buttongroup ul {
+.imagecontainer {
+  background: url('images/foodtable.jpeg');
+  background-size: cover;
+  width: 50%;
+  height: 100vh;
+}
+
+.buttondiv {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.buttondiv ul {
   display: flex;
   justify-content: space-between;
-  width: 700px;
+  width: 100%;
 }
 
 .sidebyside {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  width: 100%;
 }
-.govertical {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-}
+
 /* --------------------------- Testimonials -------------------------------- */
 
 .reviews {
-  /* padding: 5% 0 5% 0;
-  height: 100vh; */
+  /* padding: 5% 0 5% 0; */
   background: rgb(232, 242, 249);
   background-size: cover;
   flex-direction: column;
@@ -433,7 +447,6 @@ footer {
 }
 
 .rowcontainer {
-  background: lightblue;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -441,8 +454,24 @@ footer {
 }
 
 .logotaglinecontainer {
-  background: palegoldenrod;
   width: 20%;
+}
+
+.listfooter {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lato', sans-serif;
+}
+
+h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-bottom: 1em;;
+}
+
+footer input {
+  width: 100%;
 }
 
 /*********************************************************************************
