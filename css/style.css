@@ -131,6 +131,10 @@ nav a {
   font-size: 1em;
 }
 
+nav a:hover {
+  font-weight: bold;
+}
+
 .button {
   border-radius: 30px;
   font-family: 'Lato', sans-serif;
