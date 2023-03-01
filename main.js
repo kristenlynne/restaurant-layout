@@ -4,27 +4,48 @@ const containerDots = document.querySelector('.container-dots');
 // Global index to track image
 let slideIndex = 1;
 
-// Image Container
-const images = [
-  { src: 'css/images/tacos-pastor.jpg' },
-  { src: 'css/images/tacos.jpeg'},
-  { src: 'css/images/spices.jpg' },
-];
+//Image Container
+const images = {
+  breakfast: [
+    'css/images/chilaquiles.jpg',
+    'css/images/huevosrancheros.jpg',
+    'css/images/elote.jpg',
+  ],
+  lunch: [
+    'css/images/tacosyjarritos.jpg',
+    'css/images/burritos.jpg',
+    'css/images/quesadillas.jpg',
+  ],
+  dinner: [
+    'css/images/tamale.jpeg',
+    'css/images/enchiladas.jpg',
+    'css/images/chilesrellenos.jpg',
+  ],
+  desserts: [
+    'css/images/keylimepie.jpg',
+    'css/images/churros.jpg',
+    'css/images/coffeecake.jpg',
+  ],
+  drinks: [
+    'css/images/jarritos.jpg', 
+    'css/images/margaritas.jpg', 
+    'css/images/bloodymaria.jpg'
+  ],
+}
 
-// adding images and dots to the respective container
-images.map((img) => {
-  // creating image element and adding src of that image
-  var imgTag = document.createElement('img');
-  imgTag.src = img.src;
+for (const category in images) {
+  console.log(`Images for ${category}:`);
+  images[category].forEach((imageUrl) => {
+    let imgTag = document.createElement('img');
+    imgTag.src = imageUrl;
 
-  // creating dot (div) element adding 'dot' class to it
-  var dot = document.createElement('div');
-  dot.classList.add('dot');
+    let dot = document.createElement('div');
+    dot.classList.add('dot');
 
-  // appending the image and dots to respective container
-  slides.appendChild(imgTag);
-  containerDots.appendChild(dot);
-});
+    slides.appendChild(imgTag);
+    containerDots.appendChild(dot);
+  });
+}
 
 // adding EventListener to All dots so that when user clicks on it trigger move dots
 const dots = containerDots.querySelectorAll('*').forEach((dot, index) => {
@@ -52,12 +73,22 @@ function updateImageAndDot(){
   activeDot && delete activeDot.dataset.active;
 }
 
+// loops through each key in the images object and add the length of its corresponding array of images to the totalImages variable. 
+let totalImages = 0;
+
+for (const key in images) {
+  if (Object.hasOwnProperty.call(images, key)) {
+    const imageArray = images[key];
+    totalImages += imageArray.length;
+  }
+}
+
 // slide next button click event
 const nextSlide = () => {
   // it will update the slideIndex on the basis of images.length as it gets greater than images.length, this will initialize to 1
-  if (slideIndex !== images.length) {
+  if (slideIndex !== totalImages) {
     ++slideIndex;
-  } else if (slideIndex === images.length) {
+  } else if (slideIndex === totalImages) {
     slideIndex = 1;
   }
   updateImageAndDot();
@@ -72,7 +103,7 @@ const prevSlide = () => {
   if (slideIndex !== 1) {
     --slideIndex;
   } else if (slideIndex === 1) {
-    slideIndex = images.length;
+    slideIndex = totalImages;
   }
   updateImageAndDot();
 };
