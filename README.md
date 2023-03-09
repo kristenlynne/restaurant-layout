@@ -1,5 +1,5 @@
 # Restaurant Layout
-The web page layout is created dynamically using HTML, CSS, and JavaScript. The page features a visually engaging carousel gallery that displays images of the restaurant's cuisine. The gallery is implemented in JavaScript and utilizes an object to store and access the images. To enable a seamless browsing experience, infinite scroll functionality has been incorporated into the carousel through manipulation of the Document Object Model (DOM).
+The web page layout is created using HTML, CSS, and JavaScript. The page features a visually engaging carousel gallery that displays images of the restaurant's cuisine. The gallery is implemented in JavaScript and utilizes an object to store and access the images. To enable a seamless browsing experience, infinite scroll functionality has been incorporated into the carousel through manipulation of the Document Object Model (DOM).
 
 <p align="center">
 <img src="https://github.com/kristenlynne/kristenlynne/blob/main/projects/palomaazul.gif">
@@ -18,7 +18,7 @@ The web page layout is created dynamically using HTML, CSS, and JavaScript. The 
 
 🌽 Implements CI/CD by utilizing GitHub for version control and Netlify for automated builds and deployments.
 
-🍅 DOM manipulation for dynamic updates and user interactions.
+🍅 Used JavaScript to implement an image carousel by manipulating the DOM.
 
 
 ## Optimizations:
